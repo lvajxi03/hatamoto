@@ -1,0 +1,9 @@
+baseURL = 'https://hatamoto.pl/'
+languageCode = 'en-us'
+title = 'Hatamoto'
+theme = 'hugo-book'
+ignoreLogs = ['warning-goldmark-raw-html']
+# Needed for mermaid/katex shortcodes
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
