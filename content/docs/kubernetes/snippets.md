@@ -12,5 +12,5 @@ kubectl get nodes | cut -f1 -d '' | xargs -I{} kubectl get node/{} -o yaml | gre
 ```
 
 ```sh
-for i in `kubectl get pods | aws '{print $2}'`; do echo -n `kubectl get pod/{i} -o yaml | grep -i hostip` && echo " -> $i "; done | sort
+for i in `kubectl get pods | aws '{print $2}'`; do echo -n `kubectl get pod/${i} -o yaml | grep -i hostip` && echo " -> $i "; done | sort
 ```

@@ -29,7 +29,6 @@ This is a common error message in Kubernetes that occurs when a container runnin
 
 Container that starts before the main application container and _continues to run_.
 
-
 #### Probe
 
 * diagnostics performed periodically by the kubelet on a container
